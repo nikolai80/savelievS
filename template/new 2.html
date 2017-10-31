@@ -25,77 +25,77 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<script type="text/javascript" src="http://stylemixthemes.com/demo/js/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="http://stylemixthemes.com/demo/js/custom.js"></script>
 		<script type="text/javascript">
-			if (top.location != location) {
-			    top.location.href = document.location.href;
-			}
+			<!-- if (top.location != location) { -->
+			    <!-- top.location.href = document.location.href; -->
+			<!-- } -->
 		
-			$(function(){
-				'use strict';
-				$('#theme-select a').live('click', function(){
-					$('#theme-list ul').toggle();
-					$('#theme-list').toggleClass('list-opened');
-					return false;
-				});
-				$('#theme-list ul a').click(function(){
-					$('#theme-select').html($(this).closest('li').html());
-					$('#theme-list ul').hide();
-				});
+			<!-- $(function(){ -->
+				<!-- 'use strict'; -->
+				<!-- $('#theme-select a').live('click', function(){ -->
+					<!-- $('#theme-list ul').toggle(); -->
+					<!-- $('#theme-list').toggleClass('list-opened'); -->
+					<!-- return false; -->
+				<!-- }); -->
+				<!-- $('#theme-list ul a').click(function(){ -->
+					<!-- $('#theme-select').html($(this).closest('li').html()); -->
+					<!-- $('#theme-list ul').hide(); -->
+				<!-- }); -->
 				
-				$("#header-bar").hide();
-				var clicked="desktop";
-				var device;
-				var t={desktop:"100%",tabletlandscape:1040,tabletportrait:788,mobilelandscape:500,mobileportrait:340,placebo:0};
+				<!-- $("#header-bar").hide(); -->
+				<!-- var clicked="desktop"; -->
+				<!-- var device; -->
+				<!-- var t={desktop:"100%",tabletlandscape:1040,tabletportrait:788,mobilelandscape:500,mobileportrait:340,placebo:0}; -->
 				
-				jQuery(document).ready(function(){
-					iframeTop();
-					showThemeScreen();
-				});
+				<!-- jQuery(document).ready(function(){ -->
+					<!-- iframeTop(); -->
+					<!-- showThemeScreen(); -->
+				<!-- }); -->
 				
-				jQuery(window).load(function(){
-					showThemeScreen();
-				});
+				<!-- jQuery(window).load(function(){ -->
+					<!-- showThemeScreen(); -->
+				<!-- }); -->
 				
-				jQuery(window).resize(function(){
-					iframeTop();
-				});
+				<!-- jQuery(window).resize(function(){ -->
+					<!-- iframeTop(); -->
+				<!-- }); -->
 				
-				function iframeTop() {
-					var topBarHeight = jQuery('#switcher').outerHeight();
-					jQuery('#iframe').css({
-						'top': topBarHeight + 'px',
-					})
-				}	
+				<!-- function iframeTop() { -->
+					<!-- var topBarHeight = jQuery('#switcher').outerHeight(); -->
+					<!-- jQuery('#iframe').css({ -->
+						<!-- 'top': topBarHeight + 'px', -->
+					<!-- }) -->
+				<!-- }	 -->
 
-				function showThemeScreen() {
-					var $ = jQuery;
-					var theme = '';
-					var top = 0;
-					$('#switcher #theme-list ul li').hover(
+				<!-- function showThemeScreen() { -->
+					<!-- var $ = jQuery; -->
+					<!-- var theme = ''; -->
+					<!-- var top = 0; -->
+					<!-- $('#switcher #theme-list ul li').hover( -->
 						
-						function() {
-							theme = $(this).data('theme');
-							top = $(this).offset().top;
-							$('#' + theme).addClass('active');
-							$('.theme-list-screens').css({
-								'top' : top + 'px'
-							});
+						<!-- function() { -->
+							<!-- theme = $(this).data('theme'); -->
+							<!-- top = $(this).offset().top; -->
+							<!-- $('#' + theme).addClass('active'); -->
+							<!-- $('.theme-list-screens').css({ -->
+								<!-- 'top' : top + 'px' -->
+							<!-- }); -->
 							
-							var $listScreen = $('#' + theme + ' a');
-							if($listScreen.attr('data-loaded') === 'false') {
+							<!-- var $listScreen = $('#' + theme + ' a'); -->
+							<!-- if($listScreen.attr('data-loaded') === 'false') { -->
 								
-								var stmSrc = $listScreen.attr('data-img');
-								$listScreen.append('<img src="' + stmSrc + '" />');
+								<!-- var stmSrc = $listScreen.attr('data-img'); -->
+								<!-- $listScreen.append('<img src="' + stmSrc + '" />'); -->
 								
-								$listScreen.attr('data-loaded', 'true');
-							}
+								<!-- $listScreen.attr('data-loaded', 'true'); -->
+							<!-- } -->
 							
 							
-						}, function() {
-							$('#' + theme).removeClass('active');
-						}
-					);
-				}
-			});
+						<!-- }, function() { -->
+							<!-- $('#' + theme).removeClass('active'); -->
+						<!-- } -->
+					<!-- ); -->
+				<!-- } -->
+			<!-- }); -->
 		</script>
 	</head>
 	<body>
@@ -106,168 +106,168 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 		<div id="stm_wrapper" class="dent all">
-			<div id="switcher">
+			<!-- <div id="switcher"> -->
 				
-				<div class="stm_close_iframe close">
-					<a id="stm_close_frame" href="http://dentall.stylemixthemes.com/"><img src="http://stylemixthemes.com/demo/images/close@2x.png" /><span>Remove Frame</span></a>
-				</div>	
+				<!-- <div class="stm_close_iframe close"> -->
+					<!-- <a id="stm_close_frame" href="http://dentall.stylemixthemes.com/"><img src="http://stylemixthemes.com/demo/images/close@2x.png" /><span>Remove Frame</span></a> -->
+				<!-- </div>	 -->
 				
-				<div id="theme-list">
-					<div id="theme-select">
-						<a href="#">Dent All <span>Medical</span></a>
-					</div>
-					<div class="theme-list-screens">
-														<div id="theme-pearl" class="screen">
-									<a id="stm_go_theme_pearl" href="http://stylemixthemes.com/demo/pearl" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Pearl.jpg">
+				<!-- <div id="theme-list"> -->
+					<!-- <div id="theme-select"> -->
+						<!-- <a href="#">Dent All <span>Medical</span></a> -->
+					<!-- </div> -->
+					<!-- <div class="theme-list-screens"> -->
+														<!-- <div id="theme-pearl" class="screen"> -->
+									<!-- <a id="stm_go_theme_pearl" href="http://stylemixthemes.com/demo/pearl" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Pearl.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-splash" class="screen">
-									<a id="stm_go_theme_splashwp" href="http://stylemixthemes.com/demo/splashwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Splash.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-splash" class="screen"> -->
+									<!-- <a id="stm_go_theme_splashwp" href="http://stylemixthemes.com/demo/splashwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Splash.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-smarty" class="screen">
-									<a id="stm_go_theme_smartywp" href="http://stylemixthemes.com/demo/smartywp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Smarty.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-smarty" class="screen"> -->
+									<!-- <a id="stm_go_theme_smartywp" href="http://stylemixthemes.com/demo/smartywp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Smarty.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-consulting" class="screen">
-									<a id="stm_go_theme_consultingwp" href="http://stylemixthemes.com/demo/consultingwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Consulting.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-consulting" class="screen"> -->
+									<!-- <a id="stm_go_theme_consultingwp" href="http://stylemixthemes.com/demo/consultingwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Consulting.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-transcargo" class="screen">
-									<a id="stm_go_theme_transcargowp" href="http://stylemixthemes.com/demo/transcargowp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Transcargo.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-transcargo" class="screen"> -->
+									<!-- <a id="stm_go_theme_transcargowp" href="http://stylemixthemes.com/demo/transcargowp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Transcargo.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-motors" class="screen">
-									<a id="stm_go_theme_motorswp" href="http://stylemixthemes.com/demo/motorswp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Motors.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-motors" class="screen"> -->
+									<!-- <a id="stm_go_theme_motorswp" href="http://stylemixthemes.com/demo/motorswp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Motors.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-health-coach" class="screen">
-									<a id="stm_go_theme_healthcoachwp" href="http://stylemixthemes.com/demo/healthcoachwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Health Coach.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-health-coach" class="screen"> -->
+									<!-- <a id="stm_go_theme_healthcoachwp" href="http://stylemixthemes.com/demo/healthcoachwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Health Coach.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-cinderella" class="screen">
-									<a id="stm_go_theme_cinderellawp" href="http://stylemixthemes.com/demo/cinderellawp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Cinderella.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-cinderella" class="screen"> -->
+									<!-- <a id="stm_go_theme_cinderellawp" href="http://stylemixthemes.com/demo/cinderellawp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Cinderella.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-masterstudy" class="screen">
-									<a id="stm_go_theme_masterstudywp" href="http://stylemixthemes.com/demo/masterstudywp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Masterstudy.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-masterstudy" class="screen"> -->
+									<!-- <a id="stm_go_theme_masterstudywp" href="http://stylemixthemes.com/demo/masterstudywp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Masterstudy.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-savior" class="screen">
-									<a id="stm_go_theme_saviorwp" href="http://stylemixthemes.com/demo/saviorwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Savior.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-savior" class="screen"> -->
+									<!-- <a id="stm_go_theme_saviorwp" href="http://stylemixthemes.com/demo/saviorwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Savior.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-bon-appetit" class="screen">
-									<a id="stm_go_theme_bonappetitwp" href="http://stylemixthemes.com/demo/bonappetitwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Bon Appetit.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-bon-appetit" class="screen"> -->
+									<!-- <a id="stm_go_theme_bonappetitwp" href="http://stylemixthemes.com/demo/bonappetitwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Bon Appetit.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-champion" class="screen">
-									<a id="stm_go_theme_championwp" href="http://stylemixthemes.com/demo/championwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Champion.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-champion" class="screen"> -->
+									<!-- <a id="stm_go_theme_championwp" href="http://stylemixthemes.com/demo/championwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Champion.jpg"> -->
 										
-									</a>
-								</div>
-														<div id="theme-graceland" class="screen">
-									<a id="stm_go_theme_gracelandwp" href="http://stylemixthemes.com/demo/gracelandwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Graceland.jpg">
+									<!-- </a> -->
+								<!-- </div> -->
+														<!-- <div id="theme-graceland" class="screen"> -->
+									<!-- <a id="stm_go_theme_gracelandwp" href="http://stylemixthemes.com/demo/gracelandwp" data-loaded="false" data-img="https://stylemixthemes.com/demo/images/Graceland.jpg"> -->
 										
-									</a>
-								</div>
-											</div>
-					<ul>
-												<li data-theme="theme-pearl">
-							<a href="http://stylemixthemes.com/demo/pearl">Pearl <span>Business</span></a>
+									<!-- </a> -->
+								<!-- </div> -->
+											<!-- </div> -->
+					<!-- <ul> -->
+												<!-- <li data-theme="theme-pearl"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/pearl">Pearl <span>Business</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-splash">
-							<a href="http://stylemixthemes.com/demo/splashwp">Splash <span>Sport</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-splash"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/splashwp">Splash <span>Sport</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-smarty">
-							<a href="http://stylemixthemes.com/demo/smartywp">Smarty <span>Education</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-smarty"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/smartywp">Smarty <span>Education</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-consulting">
-							<a href="http://stylemixthemes.com/demo/consultingwp">Consulting <span>Business</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-consulting"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/consultingwp">Consulting <span>Business</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-transcargo">
-							<a href="http://stylemixthemes.com/demo/transcargowp">Transcargo <span>Logistics</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-transcargo"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/transcargowp">Transcargo <span>Logistics</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-motors">
-							<a href="http://stylemixthemes.com/demo/motorswp">Motors <span>Car Dealer</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-motors"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/motorswp">Motors <span>Car Dealer</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-health-coach">
-							<a href="http://stylemixthemes.com/demo/healthcoachwp">Health Coach <span>Beauty & Health</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-health-coach"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/healthcoachwp">Health Coach <span>Beauty & Health</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-cinderella">
-							<a href="http://stylemixthemes.com/demo/cinderellawp">Cinderella <span>Beauty & Health</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-cinderella"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/cinderellawp">Cinderella <span>Beauty & Health</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-masterstudy">
-							<a href="http://stylemixthemes.com/demo/masterstudywp">Masterstudy <span>Education</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-masterstudy"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/masterstudywp">Masterstudy <span>Education</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-savior">
-							<a href="http://stylemixthemes.com/demo/saviorwp">Savior <span>Non-Profit</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-savior"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/saviorwp">Savior <span>Non-Profit</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-bon-appetit">
-							<a href="http://stylemixthemes.com/demo/bonappetitwp">Bon Appetit <span>Restaurant</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-bon-appetit"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/bonappetitwp">Bon Appetit <span>Restaurant</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-champion">
-							<a href="http://stylemixthemes.com/demo/championwp">Champion <span>Sport</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-champion"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/championwp">Champion <span>Sport</span></a> -->
 							
-						</li>	
-												<li data-theme="theme-graceland">
-							<a href="http://stylemixthemes.com/demo/gracelandwp">Graceland <span>Church</span></a>
+						<!-- </li>	 -->
+												<!-- <li data-theme="theme-graceland"> -->
+							<!-- <a href="http://stylemixthemes.com/demo/gracelandwp">Graceland <span>Church</span></a> -->
 							
-						</li>	
-											</ul>
-				</div>	
+						<!-- </li>	 -->
+											<!-- </ul> -->
+				<!-- </div>	 -->
 			
-				<div class="xs_clear"></div>
+				<!-- <div class="xs_clear"></div> -->
 	
 				<!--Likes-->
-				<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-						var js, fjs = d.getElementsByTagName(s)[0];
-						if (d.getElementById(id)) return;
-						js = d.createElement(s); js.id = id;
-						js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.7&appId=1046693402023348";
-						fjs.parentNode.insertBefore(js, fjs);
-					}(document, 'script', 'facebook-jssdk'));</script>
+				<!-- <div id="fb-root"></div> -->
+				<!-- <script>(function(d, s, id) { -->
+						<!-- var js, fjs = d.getElementsByTagName(s)[0]; -->
+						<!-- if (d.getElementById(id)) return; -->
+						<!-- js = d.createElement(s); js.id = id; -->
+						<!-- js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.7&appId=1046693402023348"; -->
+						<!-- fjs.parentNode.insertBefore(js, fjs); -->
+					<!-- }(document, 'script', 'facebook-jssdk'));</script> -->
 	
 	
-				<div class="stm_top_likes_btns">
-					<div class="stm_top_like_btn"><div class="fb-like" data-href="https://www.facebook.com/stylemixthemes" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div></div>
-					<div class="stm_top_like_btn">
-						<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/stylemix_themes" data-text="Premium WordPress Themes from Envato Elite Author on Themeforest.net">Tweet</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					</div>
-				</div>
+				<!-- <div class="stm_top_likes_btns"> -->
+					<!-- <div class="stm_top_like_btn"><div class="fb-like" data-href="https://www.facebook.com/stylemixthemes" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div></div> -->
+					<!-- <div class="stm_top_like_btn"> -->
+						<!-- <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/stylemix_themes" data-text="Premium WordPress Themes from Envato Elite Author on Themeforest.net">Tweet</a> -->
+						<!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+					<!-- </div> -->
+				<!-- </div> -->
 				
-				<div class="wp_support_banner">
-					<!--<a href="http://wp.stylemix.net/" target="_blank" title="StylemixThemes"><img alt="WP Support" src="https://stylemixthemes.scdn2.secure.raxcdn.com/demo/images/customization.png" width="307" height="55"></a>-->
-										<a  id="stm_theme_customization_banner" href="https://stylemix.net/?utm_source=themeforest&utm_medium=banner&utm_campaign=dentallwp" target="_blank" title="Stylemix"><img alt="Stylemix" src="https://stylemixthemes.scdn2.secure.raxcdn.com/demo/images/banner_top_.png" width="307" height="55"></a>
-				</div>
+				<!-- <div class="wp_support_banner"> -->
+					<!-- <!--<a href="http://wp.stylemix.net/" target="_blank" title="StylemixThemes"><img alt="WP Support" src="https://stylemixthemes.scdn2.secure.raxcdn.com/demo/images/customization.png" width="307" height="55"></a>--> -->
+										<!-- <a  id="stm_theme_customization_banner" href="https://stylemix.net/?utm_source=themeforest&utm_medium=banner&utm_campaign=dentallwp" target="_blank" title="Stylemix"><img alt="Stylemix" src="https://stylemixthemes.scdn2.secure.raxcdn.com/demo/images/banner_top_.png" width="307" height="55"></a> -->
+				<!-- </div> -->
 				
-				<div class="purchase">
-					<a id="stm_purchase_iframe" href="http://themeforest.net/item/dentall-dental-practice-wordpress-theme/13065248">Purchase</a>
-				</div>
+				<!-- <div class="purchase"> -->
+					<!-- <a id="stm_purchase_iframe" href="http://themeforest.net/item/dentall-dental-practice-wordpress-theme/13065248">Purchase</a> -->
+				<!-- </div> -->
 				
 			</div>
 			
@@ -284,40 +284,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/c8k7m8bw';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 			
 				
-		<div class="stm_mc_popup_open_button removed">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16" height="15" viewBox="0 0 60.125 52.594">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            fill: #fff;
-                            fill-rule: evenodd;
-                        }
-                    </style>
-                </defs>
-                <path d="M35.609,47.067 C35.139,47.419 34.538,47.595 33.808,47.595 L26.292,47.595 C25.561,47.595 24.961,47.419 24.491,47.067 C24.021,46.714 23.786,46.212 23.786,45.560 L23.786,43.367 L23.786,25.047 L23.786,17.530 L36.313,17.530 L36.313,25.047 L36.313,43.367 L36.313,45.560 C36.313,46.212 36.078,46.714 35.609,47.067 ZM15.800,11.423 C15.069,10.693 14.704,9.806 14.704,8.761 C14.704,7.718 15.069,6.830 15.800,6.099 C16.531,5.369 17.418,5.003 18.462,5.003 C19.584,5.003 20.484,5.408 21.163,6.217 L26.096,12.520 L18.462,12.520 C17.418,12.520 16.531,12.154 15.800,11.423 ZM41.637,12.520 L34.043,12.520 L38.936,6.217 C39.614,5.408 40.515,5.003 41.637,5.003 C42.681,5.003 43.568,5.369 44.299,6.099 C45.030,6.830 45.395,7.718 45.395,8.761 C45.395,9.806 45.030,10.693 44.299,11.423 C43.568,12.154 42.681,12.520 41.637,12.520 L41.637,12.520 ZM59.762,17.883 C59.527,17.648 59.227,17.530 58.862,17.530 L41.637,17.530 C44.064,17.530 46.132,16.676 47.842,14.966 C49.551,13.257 50.406,11.189 50.406,8.761 C50.406,6.334 49.551,4.266 47.842,2.557 C46.132,0.848 44.064,-0.008 41.637,-0.008 C38.844,-0.008 36.652,0.997 35.061,3.007 L30.050,9.466 L25.039,3.007 C23.447,0.997 21.255,-0.008 18.462,-0.008 C16.035,-0.008 13.966,0.848 12.257,2.557 C10.548,4.266 9.693,6.334 9.693,8.761 C9.693,11.189 10.548,13.257 12.257,14.966 C13.966,16.676 16.035,17.530 18.462,17.530 L1.238,17.530 C0.872,17.530 0.572,17.648 0.337,17.883 C0.102,18.118 -0.015,18.418 -0.015,18.783 L-0.015,31.310 C-0.015,31.676 0.102,31.976 0.337,32.210 C0.572,32.445 0.872,32.563 1.238,32.563 L4.996,32.563 L4.996,48.848 C4.996,49.892 5.361,50.780 6.092,51.510 C6.822,52.241 7.710,52.606 8.754,52.606 L51.346,52.606 C52.389,52.606 53.277,52.241 54.008,51.510 C54.738,50.780 55.104,49.892 55.104,48.848 L55.104,32.563 L58.862,32.563 C59.227,32.563 59.527,32.445 59.762,32.210 C59.997,31.976 60.115,31.676 60.115,31.310 L60.115,18.783 C60.115,18.418 59.997,18.118 59.762,17.883 Z" class="cls-1"/>
-            </svg>
-            <span>Get Freebie!</span>
-        </div>
+		<!-- <div class="stm_mc_popup_open_button removed"> -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="16" height="15" viewBox="0 0 60.125 52.594"> -->
+                <!-- <defs> -->
+                    <!-- <style> -->
+                        <!-- .cls-1 { -->
+                            <!-- fill: #fff; -->
+                            <!-- fill-rule: evenodd; -->
+                        <!-- } -->
+                    <!-- </style> -->
+                <!-- </defs> -->
+                <!-- <path d="M35.609,47.067 C35.139,47.419 34.538,47.595 33.808,47.595 L26.292,47.595 C25.561,47.595 24.961,47.419 24.491,47.067 C24.021,46.714 23.786,46.212 23.786,45.560 L23.786,43.367 L23.786,25.047 L23.786,17.530 L36.313,17.530 L36.313,25.047 L36.313,43.367 L36.313,45.560 C36.313,46.212 36.078,46.714 35.609,47.067 ZM15.800,11.423 C15.069,10.693 14.704,9.806 14.704,8.761 C14.704,7.718 15.069,6.830 15.800,6.099 C16.531,5.369 17.418,5.003 18.462,5.003 C19.584,5.003 20.484,5.408 21.163,6.217 L26.096,12.520 L18.462,12.520 C17.418,12.520 16.531,12.154 15.800,11.423 ZM41.637,12.520 L34.043,12.520 L38.936,6.217 C39.614,5.408 40.515,5.003 41.637,5.003 C42.681,5.003 43.568,5.369 44.299,6.099 C45.030,6.830 45.395,7.718 45.395,8.761 C45.395,9.806 45.030,10.693 44.299,11.423 C43.568,12.154 42.681,12.520 41.637,12.520 L41.637,12.520 ZM59.762,17.883 C59.527,17.648 59.227,17.530 58.862,17.530 L41.637,17.530 C44.064,17.530 46.132,16.676 47.842,14.966 C49.551,13.257 50.406,11.189 50.406,8.761 C50.406,6.334 49.551,4.266 47.842,2.557 C46.132,0.848 44.064,-0.008 41.637,-0.008 C38.844,-0.008 36.652,0.997 35.061,3.007 L30.050,9.466 L25.039,3.007 C23.447,0.997 21.255,-0.008 18.462,-0.008 C16.035,-0.008 13.966,0.848 12.257,2.557 C10.548,4.266 9.693,6.334 9.693,8.761 C9.693,11.189 10.548,13.257 12.257,14.966 C13.966,16.676 16.035,17.530 18.462,17.530 L1.238,17.530 C0.872,17.530 0.572,17.648 0.337,17.883 C0.102,18.118 -0.015,18.418 -0.015,18.783 L-0.015,31.310 C-0.015,31.676 0.102,31.976 0.337,32.210 C0.572,32.445 0.872,32.563 1.238,32.563 L4.996,32.563 L4.996,48.848 C4.996,49.892 5.361,50.780 6.092,51.510 C6.822,52.241 7.710,52.606 8.754,52.606 L51.346,52.606 C52.389,52.606 53.277,52.241 54.008,51.510 C54.738,50.780 55.104,49.892 55.104,48.848 L55.104,32.563 L58.862,32.563 C59.227,32.563 59.527,32.445 59.762,32.210 C59.997,31.976 60.115,31.676 60.115,31.310 L60.115,18.783 C60.115,18.418 59.997,18.118 59.762,17.883 Z" class="cls-1"/> -->
+            <!-- </svg> -->
+            <!-- <span>Get Freebie!</span> -->
+        <!-- </div> -->
 	
 	
-        <div class="stm_mc_popup_side stm_mc_theme_form_thank_you">
-            <div class="close-mc-form"></div>
-            <div class="stm_mc_popup_content">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="60.125" height="60.125" viewBox="0 0 60.125 60.125">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: #fff;
-                                fill-rule: evenodd;
-                            }
-                        </style>
-                    </defs>
-                    <path d="M49.545,25.472 L28.288,46.729 C27.792,47.225 27.192,47.472 26.487,47.472 C25.808,47.472 25.221,47.225 24.726,46.729 L10.555,32.557 C10.085,32.088 9.850,31.500 9.850,30.796 C9.850,30.065 10.085,29.465 10.555,28.995 L14.117,25.472 C14.612,24.976 15.200,24.728 15.879,24.728 C16.557,24.728 17.144,24.976 17.640,25.472 L26.487,34.319 L42.459,18.386 C42.955,17.891 43.542,17.642 44.221,17.642 C44.899,17.642 45.487,17.891 45.983,18.386 L49.545,21.909 C50.015,22.379 50.250,22.980 50.250,23.710 C50.250,24.415 50.015,25.002 49.545,25.472 L49.545,25.472 ZM45.141,4.019 C40.534,1.332 35.504,-0.013 30.050,-0.013 C24.595,-0.013 19.564,1.332 14.959,4.019 C10.352,6.708 6.705,10.355 4.017,14.961 C1.329,19.567 -0.015,24.598 -0.015,30.052 C-0.015,35.507 1.329,40.537 4.017,45.143 C6.705,49.750 10.352,53.397 14.959,56.085 C19.564,58.772 24.595,60.117 30.050,60.117 C35.504,60.117 40.534,58.772 45.141,56.085 C49.747,53.397 53.394,49.750 56.083,45.143 C58.770,40.537 60.115,35.507 60.115,30.052 C60.115,24.598 58.770,19.567 56.083,14.961 C53.394,10.355 49.747,6.708 45.141,4.019 Z" class="cls-1"/>
-                </svg>
-                <p>Thank You!</p>
-            </div>
-            <p class="stm_mc_popup_ty">Please check your email and confirm your registration.</p>
-        </div>
+        <!-- <div class="stm_mc_popup_side stm_mc_theme_form_thank_you"> -->
+            <!-- <div class="close-mc-form"></div> -->
+            <!-- <div class="stm_mc_popup_content"> -->
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="60.125" height="60.125" viewBox="0 0 60.125 60.125"> -->
+                    <!-- <defs> -->
+                        <!-- <style> -->
+                            <!-- .cls-1 { -->
+                                <!-- fill: #fff; -->
+                                <!-- fill-rule: evenodd; -->
+                            <!-- } -->
+                        <!-- </style> -->
+                    <!-- </defs> -->
+                    <!-- <path d="M49.545,25.472 L28.288,46.729 C27.792,47.225 27.192,47.472 26.487,47.472 C25.808,47.472 25.221,47.225 24.726,46.729 L10.555,32.557 C10.085,32.088 9.850,31.500 9.850,30.796 C9.850,30.065 10.085,29.465 10.555,28.995 L14.117,25.472 C14.612,24.976 15.200,24.728 15.879,24.728 C16.557,24.728 17.144,24.976 17.640,25.472 L26.487,34.319 L42.459,18.386 C42.955,17.891 43.542,17.642 44.221,17.642 C44.899,17.642 45.487,17.891 45.983,18.386 L49.545,21.909 C50.015,22.379 50.250,22.980 50.250,23.710 C50.250,24.415 50.015,25.002 49.545,25.472 L49.545,25.472 ZM45.141,4.019 C40.534,1.332 35.504,-0.013 30.050,-0.013 C24.595,-0.013 19.564,1.332 14.959,4.019 C10.352,6.708 6.705,10.355 4.017,14.961 C1.329,19.567 -0.015,24.598 -0.015,30.052 C-0.015,35.507 1.329,40.537 4.017,45.143 C6.705,49.750 10.352,53.397 14.959,56.085 C19.564,58.772 24.595,60.117 30.050,60.117 C35.504,60.117 40.534,58.772 45.141,56.085 C49.747,53.397 53.394,49.750 56.083,45.143 C58.770,40.537 60.115,35.507 60.115,30.052 C60.115,24.598 58.770,19.567 56.083,14.961 C53.394,10.355 49.747,6.708 45.141,4.019 Z" class="cls-1"/> -->
+                <!-- </svg> -->
+                <!-- <p>Thank You!</p> -->
+            <!-- </div> -->
+            <!-- <p class="stm_mc_popup_ty">Please check your email and confirm your registration.</p> -->
+        <!-- </div> -->
     
     
 	<div class="stm_mc_popup_side stm_mc_theme_form closed">
