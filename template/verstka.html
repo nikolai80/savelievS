@@ -165,11 +165,22 @@
   <link rel="stylesheet" id="stm_skin_4-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/skin_4.css?ver=1.2" type="text/css" media="all">
   <link rel="stylesheet" id="js_composer_front-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/js_composer/assets/css/js_composer.css?ver=4.7.4" type="text/css" media="all">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic%7CPlayfair+Display:400,700,900,400italic,700italic,900italic">
-  <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script>
+  <!-- Мои стили -->
+  <link rel="stylesheet" href="css/owlCarousel/owl.carousel.css" type="text/css" />
+  <link rel="stylesheet" href="css/owlCarousel/owl.theme.default.css" type="text/css" />
+  <!-- END Мои стили -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+
+
+
+  <!-- TODO Убрать при переносе в проект. Рыбченко 19112017 -->
+  <!--<script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script>
   <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
   <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.0.8.5"></script>
-  <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.8.5"></script>
-
+  <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.8.5"></script>-->
   <!--<script type="text/javascript">
           var profilePage = 'http://dentall.stylemixthemes.com/';
 
@@ -372,7 +383,8 @@
                   <a href="#">Блог</a><span class="arrow"><i class="fa fa-chevron-down"></i></span>
                   <ul class="sub-menu">
                     <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                    <a href="http://dentall.stylemixthemes.com/blog/">Содержание</a></li>
+                      <a href="http://dentall.stylemixthemes.com/blog/">Содержание</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-902"><a href="http://dentall.stylemixthemes.com/contact-us/">Contact Us</a></li>
@@ -437,6 +449,16 @@
                       <div class="wpb_revslider_element wpb_content_element">
                         <div class="forcefullwidth_wrapper_tp_banner" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px">
                           <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin: 0px auto; background-color: transparent; padding: 0px; height: 640px; position: absolute; overflow: visible; width: 1903px; left: -397px;">
+                            <div class="owl-carousel owl-theme">
+                              <div class="item">
+                                <img alt="first-slide" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/1.jpg" />
+                              </div>
+                              <div class="item">
+                                <img alt="first-slide" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/2.jpg" />
+                              </div>
+                            </div>
+
+
                             <!-- START REVOLUTION SLIDER 5.0.8.5 fullwidth mode -->
                             <div id="rev_slider_1_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive" style="max-height: 640px; margin-top: 0px; margin-bottom: 0px; height: 640px;" data-version="5.0.8.5">
                               <ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
@@ -2452,7 +2474,16 @@
   <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/js/countUp.min.js?ver=1.2"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;ver=1.2"></script>
 
-
+  <!-- Мои скрипты -->
+  <script type="text/javascript" src="js/owlCarousel/owl.carousel.js"></script>
+  <script type="text/javascript" src="js/sv.js"></script>
+  <script type="text/javascript">
+    (function () {
+      console.log("ready for start");
+      sv.init();
+    }());
+  </script>
+  <!-- END Мои скрипты -->
   <!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
 
   Served from: dentall.stylemixthemes.com @ 2017-10-31 13:52:37 by W3 Total Cache -->
