@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\css\\owlCarousel",
+    "\\js",
+    "\\js\\owlCarousel"
   ],
-  "SelectedNode": "\\verstka.html",
+  "SelectedNode": "\\js\\owlCarousel\\owl.carousel.js",
   "PreviewInSolutionExplorer": false
 }
