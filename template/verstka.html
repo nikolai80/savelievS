@@ -1,6 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US" class="no-js wf-playfairdisplay-i9-active wf-roboto-i7-active wf-roboto-i9-active wf-playfairdisplay-n4-active wf-playfairdisplay-n7-active wf-playfairdisplay-n9-active wf-playfairdisplay-i4-active wf-playfairdisplay-i7-active wf-roboto-n7-active wf-roboto-n9-active wf-roboto-i1-active wf-roboto-i3-active wf-roboto-i4-active wf-roboto-i5-active wf-roboto-n1-active wf-roboto-n3-active wf-roboto-n4-active wf-roboto-n5-active wf-active js_active  vc_desktop  vc_transform  vc_transform">
 <head>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+
+
+
+
   <style type="text/css">
     .gm-style .gm-style-mtc label, .gm-style .gm-style-mtc div {
       font-weight: 400
@@ -149,7 +154,6 @@
   <link rel="stylesheet" id="contact-form-7-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3.1" type="text/css" media="all">
   <link rel="stylesheet" id="rs-plugin-settings-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.0.8.5" type="text/css" media="all">
   <link rel="stylesheet" href="D:\programming\webProgects\saveliev\template\css\mainSlider.css" type="text/css" media="all">
-  <link rel="stylesheet" id="stm_bootstrap.min.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/bootstrap.min.css?ver=1.2" type="text/css" media="all">
   <link rel="stylesheet" id="stm_font-awesome.min.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/font-awesome.min.css?ver=1.2" type="text/css" media="all">
   <link rel="stylesheet" id="stm_stm-icomoon.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/stm-icomoon.css?ver=1.2" type="text/css" media="all">
   <link rel="stylesheet" id="stm_jquery-ui.min.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/jquery-ui.min.css?ver=1.2" type="text/css" media="all">
@@ -439,25 +443,53 @@
 
         </header>
         <section id="content">
-          <div class="content_wrapper">
-            <article id="post-2" class="post-2 page type-page status-publish hentry">
-
-              <div class="container">
-                <div class="carousel-wrapper">
-                  <div class="owl-carousel owl-theme">
-                    <div class="item">
-                      <img alt="first-slide" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/1.jpg" />
+          <div class="container-fluid">
+            <div class="row sv-carowsel">
+              <div class="carousel-wrapper col-12">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <img alt="first-slide" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/1.jpg" />
+                  </div>
+                  <div class="item">
+                    <img alt="first-slide" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/2.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row sv-aboutUs">
+                <div class="col-9">
+                  <div class="sv-aboutAs__description row">
+                    <div class="col-12">
+                      <h2 style="" class="">Обо мне</h2>
+                      <div style="" class="sv-aboutAs__description-name">Встречайте доктор С. Савельев</div>
                     </div>
-                    <div class="item">
-                      <img alt="first-slide" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/2.jpg" />
+                    <div class="col-12">
+                      <div class="media">
+                        <figure class="mr-3">
+                            <img class="full_width_mobile wp-image-158 size-medium" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/Fotolia_63054040_Subscription_Monthly_XL-300x200.jpg" alt="Доктор Савельев с пациентом" srcset="http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/Fotolia_63054040_Subscription_Monthly_XL-300x200.jpg 300w, http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/Fotolia_63054040_Subscription_Monthly_XL.jpg 500w" sizes="(max-width: 300px) 100vw, 300px" height="200" width="300">
+                          <figcaption class="sv-aboutAs__description-figureCaption">Доктор Савельев<br> с пациентом</figcaption>
+                        </figure>
+                        <div class="media-body">
+                          <p>Our&nbsp;Dental Clinic&nbsp;is dedicated to providing the most up to date general, orthodontic and family dentistry.</p>
+                          <p>Our Clinic&nbsp;has grown to provide a world class facility for the treatment of tooth loss, dental cosmetics and advanced restorative dentistry.</p>
+                          <p>We are among the most qualified implant providers in the USA&nbsp;with over 35 years of quality training and experience.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div><!--.container-->
+                <div class="col-lg-3 sv-aboutAs-sertificatesCarowsel">
 
-            </article> <!-- #post-## -->
-          </div>
+                </div>
+              </div>
+              <div class="row sv-ourAdvantages"></div>
+              <div class="row sv-ourHappyClients"></div>
+              <div class="row sv-onlineAppointment"></div>
+            </div>
 
+
+          </div><!--.container-->
         </section> <!--#content-->
         <footer id="footer">
           <div class="footer_widgets">
@@ -520,6 +552,10 @@
       </div> <!--.wrapper-->
     </div> <!--.main_wrapper-->
   </div>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+
   <script type="text/javascript" id="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "610513842419876"); fbq("set", "agent", "tmgoogletagmanager", "610513842419876"); fbq("track", "PageView");</script>
   <!--.main-->
   <link rel="stylesheet" id="vc_google_fonts_abril_fatfaceregular-css" href="//fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.4.11" type="text/css" media="all">
@@ -537,7 +573,6 @@
   </script>
   <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3.1"></script>
   <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/js/jquery.cookie.min.js?ver=1.2"></script>
-  <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/js/bootstrap.min.js?ver=1.2"></script>
   <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"></script>
   <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4"></script>
   <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4"></script>

@@ -6718,3 +6718,26 @@ body .secondary_background_color {
     height: auto;
   }
 }
+
+/*About us*/
+.sv-aboutUs__description h2 {
+  color: #4c4c4c;
+  text-align: left;
+}
+.sv-aboutAs__description-name {
+  font-size: 30px;
+  color: #c2c2c2;
+  line-height: 40px;
+  text-align: left;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-style: italic;
+}
+.sv-aboutAs__description-figureCaption {
+  color: #C2C2C2;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 20px 0 0;
+}
+
+/*end About us*/
