@@ -6741,3 +6741,59 @@ body .secondary_background_color {
 }
 
 /*end About us*/
+
+/*ourAdvantages*/
+.sv-ourAdvantages {
+  background: #18AFD3;
+  color: #fff;
+  text-shadow: none;
+}
+.sv-ourAdvantages__header h2 {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 70px !important;
+  font-family: Roboto;
+  line-height: 60px;
+  font-weight: 300;
+  font-size: 48px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.24s ease-in-out;
+  -moz-transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
+}
+
+.sv-ourAdvantages__list i {
+  font-size: 63px;
+}
+.sv-ourAdvantages__list .text {
+  font-weight: 300;
+}
+  .sv-ourAdvantages__list .text h4 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 20px;
+    font-family: Roboto;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.24s ease-in-out;
+    -moz-transition: opacity 0.24s ease-in-out;
+    transition: opacity 0.24s ease-in-out;
+  }
+.sv-ourAdvantages__list p {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.24s ease-in-out;
+
+}
+  .sv-ourAdvantages__list p span {
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+  }
+/*end ourAdvantages*/
