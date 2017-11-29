@@ -6797,3 +6797,43 @@ body .secondary_background_color {
     font-weight: 400;
   }
 /*end ourAdvantages*/
+/*sv-ourHappyClients*/
+.happyClients__carowsel .item{
+  width:380px;
+  padding:0 15px;
+}
+.testimonial{
+  border: 1px solid #E4E4E4;
+  padding: 40px;
+  text-align: center;
+  background: #fff;
+}
+  .testimonial .testimonial_text {
+    font-style: normal;
+    margin: 0 0 30px;
+  }
+    .testimonial .testimonial_text p {
+      line-height: 30px;
+      font-weight: 300;
+      font-size: 18px;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: opacity 0.24s ease-in-out;
+      -moz-transition: opacity 0.24s ease-in-out;
+      transition: opacity 0.24s ease-in-out;
+      color: #868686;
+    }
+
+.additional_font {
+  font-family: "Playfair Display";
+  font-style: italic;
+  opacity: 1;
+  visibility: visible;
+}
+
+.testimonial .testimonial_author {
+  font-size: 14px;
+  color: #4C4C4C;
+  margin: 0 0 5px;
+}
+/*end sv-ourHappyClients*/

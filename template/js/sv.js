@@ -1,7 +1,7 @@
 var sv = sv || {}
 sv = {
   init: function() {
-    $('.owl-carousel').owlCarousel({
+    $('.mainCarowsel').owlCarousel({
       loop: true,
       margin: 10,
       nav: true,
@@ -9,6 +9,14 @@ sv = {
       autoplay: true,
       autoplayTimeout: 10000,
       autoplayHoverPause: true
+    });
+    $('.happyClients__carowsel').owlCarousel({
+      center:true,
+      loop: true,
+      margin: 10,
+      nav: false,
+      items: 4
+      
     });
   }
 }
