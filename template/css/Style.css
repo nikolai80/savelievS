@@ -6837,3 +6837,12 @@ body .secondary_background_color {
   margin: 0 0 5px;
 }
 /*end sv-ourHappyClients*/
+
+/*sv-onlineAppointment*/
+
+.formInputLabel {
+  font-size: 35px;
+  color: #18AFD3;
+}
+
+/*end sv-onlineAppointment*/

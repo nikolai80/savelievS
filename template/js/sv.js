@@ -15,7 +15,7 @@ sv = {
       loop: true,
       margin: 10,
       nav: false,
-      items: 4
+      items: 3
       
     });
   }
