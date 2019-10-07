@@ -5,6 +5,7 @@ sv = {
       loop: true,
       margin: 10,
       nav: true,
+      navText:["Назад","Дальше"],
       items: 1,
       autoplay: true,
       autoplayTimeout: 10000,
