@@ -3,37 +3,757 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+
+
+
+    <style type="text/css">
+        .gm-style .gm-style-mtc label, .gm-style .gm-style-mtc div {
+            font-weight: 400
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <style type="text/css">
+        .gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
+            font-size: 10px
+        }
+    </style>
+
+    <style type="text/css">
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0,0,0,0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto,Arial,sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="http://dentall.stylemixthemes.com/xmlrpc.php">
+    <title>Dent-All – Dental Practice WordPress Theme</title>
+    <style type="text/css">
+        /* Light Color */
+        body #booked-profile-page input[type=submit].button-primary:hover,
+        body table.booked-calendar input[type=submit].button-primary:hover,
+        body .booked-modal input[type=submit].button-primary:hover,
+        body table.booked-calendar thead,
+        body table.booked-calendar thead th,
+        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+        body #booked-profile-page .booked-profile-appt-list .appt-block .google-cal-button,
+        body #booked-profile-page .booked-profile-header {
+            background: #18afd3 !important;
+        }
+
+        body #booked-profile-page input[type=submit].button-primary:hover,
+        body table.booked-calendar input[type=submit].button-primary:hover,
+        body .booked-modal input[type=submit].button-primary:hover,
+        body table.booked-calendar th,
+        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+        body #booked-profile-page .booked-profile-appt-list .appt-block .google-cal-button,
+        body #booked-profile-page .booked-profile-header {
+            border-color: #18afd3 !important;
+        }
+
+
+        /* Dark Color */
+        body table.booked-calendar tr.days,
+        body table.booked-calendar tr.days th,
+        body .booked-calendarSwitcher,
+        body .booked-calendarSwitcher select {
+            background: #4c6575 !important;
+        }
+
+            body table.booked-calendar tr.days th {
+                border-color: #4c6575 !important;
+            }
+
+
+        /* Primary Button Color */
+        body #booked-profile-page input[type=submit].button-primary,
+        body table.booked-calendar input[type=submit].button-primary,
+        body .booked-modal input[type=submit].button-primary,
+        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+        body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block {
+            background: #f57e57;
+        }
+
+        body #booked-profile-page input[type=submit].button-primary,
+        body table.booked-calendar input[type=submit].button-primary,
+        body .booked-modal input[type=submit].button-primary,
+        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button {
+            border-color: #f57e57;
+        }
+    </style>
+    <!-- <script src="https://connect.facebook.net/signals/config/610513842419876?v=2.8.0" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NSLZ8D5"></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js" type="text/javascript" async=""></script><script> -->
+    <!-- /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */ -->
+    <!-- if ( typeof WebFontConfig === "undefined" ) { -->
+    <!-- WebFontConfig = new Object(); -->
+    <!-- } -->
+    <!-- WebFontConfig['google'] = {families: ['Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic', 'Playfair+Display:400,700,900,400italic,700italic,900italic']}; -->
+    <!-- (function() { -->
+    <!-- var wf = document.createElement( 'script' ); -->
+    <!-- wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js'; -->
+    <!-- wf.type = 'text/javascript'; -->
+    <!-- wf.async = 'true'; -->
+    <!-- var s = document.getElementsByTagName( 'script' )[0]; -->
+    <!-- s.parentNode.insertBefore( wf, s ); -->
+    <!-- })(); -->
+    <!-- </script> -->
+    <meta name="robots" content="noindex,follow">
+    <link rel="alternate" type="application/rss+xml" title="Dent-All » Feed" href="http://dentall.stylemixthemes.com/feed/">
+    <link rel="alternate" type="application/rss+xml" title="Dent-All » Comments Feed" href="http://dentall.stylemixthemes.com/comments/feed/">
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/", "ext": ".png", "source": { "concatemoji": "http:\/\/dentall.stylemixthemes.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.11" } };
+        !function (a, b, c) { function d(a) { var c, d, e, f = b.createElement("canvas"), g = f.getContext && f.getContext("2d"), h = String.fromCharCode; return g && g.fillText ? (g.textBaseline = "top", g.font = "600 32px Arial", "flag" === a ? (g.fillText(h(55356, 56806, 55356, 56826), 0, 0), f.toDataURL().length > 3e3) : "diversity" === a ? (g.fillText(h(55356, 57221), 0, 0), c = g.getImageData(16, 16, 1, 1).data, g.fillText(h(55356, 57221, 55356, 57343), 0, 0), c = g.getImageData(16, 16, 1, 1).data, e = c[0] + "," + c[1] + "," + c[2] + "," + c[3], d !== e) : ("simple" === a ? g.fillText(h(55357, 56835), 0, 0) : g.fillText(h(55356, 57135), 0, 0), 0 !== g.getImageData(16, 16, 1, 1).data[0])) : !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g; c.supports = { simple: d("simple"), flag: d("flag"), unicode8: d("unicode8"), diversity: d("diversity") }, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.simple && c.supports.flag && c.supports.unicode8 && c.supports.diversity || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <script src="http://dentall.stylemixthemes.com/wp-includes/js/wp-emoji-release.min.js?ver=4.4.11" type="text/javascript"></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" id="booked-gf-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A600%2C400%7CMontserrat%3A700%2C400&amp;subset=cyrillic%2Ccyrillic-ext%2Clatin%2Cgreek-ext%2Cgreek%2Clatin-ext%2Cvietnamese&amp;ver=1.6.12" type="text/css" media="all">
+    <link rel="stylesheet" id="booked-fontawesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.3.0" type="text/css" media="all">
+    <link rel="stylesheet" id="booked-tooltipster-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/booked/js/tooltipster/css/tooltipster.css?ver=3.3.0" type="text/css" media="all">
+    <link rel="stylesheet" id="booked-tooltipster-theme-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/booked/js/tooltipster/css/themes/tooltipster-light.css?ver=3.3.0" type="text/css" media="all">
+    <link rel="stylesheet" id="booked-animations-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/booked/css/animations.css?ver=1.6.12" type="text/css" media="all">
+    <link rel="stylesheet" id="booked-styles-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/booked/css/styles.css?ver=1.6.12" type="text/css" media="all">
+    <link rel="stylesheet" id="booked-responsive-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/booked/css/responsive.css?ver=1.6.12" type="text/css" media="all">
+    <link rel="stylesheet" id="contact-form-7-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3.1" type="text/css" media="all">
+    <link rel="stylesheet" id="rs-plugin-settings-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.0.8.5" type="text/css" media="all">
+    <link rel="stylesheet" href="D:\programming\webProgects\saveliev\template\css\mainSlider.css" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_font-awesome.min.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/font-awesome.min.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_jquery-ui.min.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/jquery-ui.min.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_jquery-ui.datepicker.min.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/jquery-ui.datepicker.min.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_jquery-ui.slider.min.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/jquery-ui.slider.min.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_jquery-ui-timepicker-addon.min.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/jquery-ui-timepicker-addon.min.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_jquery.fancybox.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/jquery.fancybox.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_select2.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/select2.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" href="Content/Style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_frontend_customizer-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/frontend_customizer.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_skin_2-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/skin_2.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_skin_3-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/skin_3.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="stm_skin_4-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/skin_4.css?ver=1.2" type="text/css" media="all">
+    <link rel="stylesheet" id="js_composer_front-css" href="http://dentall.stylemixthemes.com/wp-content/plugins/js_composer/assets/css/js_composer.css?ver=4.7.4" type="text/css" media="all">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic%7CPlayfair+Display:400,700,900,400italic,700italic,900italic">
+    <!-- Мои стили -->
+    <link rel="stylesheet" href="Content/owlCarousel/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="Content/owlCarousel/owl.theme.default.css" type="text/css" />
+    <link rel="stylesheet" href="Content/stm-icomoon.css" type="text/css" media="all">
+
+    <!-- END Мои стили -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- TODO Убрать при переносе в проект. Рыбченко 19112017 -->
+    <!--<script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script>
+    <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
+    <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.0.8.5"></script>
+    <script type="text/javascript" src="http://dentall.stylemixthemes.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.0.8.5"></script>-->
+    <!--<script type="text/javascript">
+            var profilePage = 'http://dentall.stylemixthemes.com/';
+
+      // Set some defaults
+      var timeFormat = 'h:i A';
+      var timeInterval = 60;
+
+      var i18n_confirm_appt_delete = 'Are you sure you want to cancel this appointment?',
+        i18n_please_wait = 'Please wait...',
+        i18n_wrong_username_pass = 'Wrong username/password combination.',
+        i18n_request_appointment = 'Request Appointment',
+        i18n_fill_out_required_fields = 'Please fill out all required fields.',
+        i18n_appt_required_fields = 'A first name and an email address are required fields.';
+
+    </script>-->
+
+    <link rel="https://api.w.org/" href="http://dentall.stylemixthemes.com/wp-json/">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dentall.stylemixthemes.com/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dentall.stylemixthemes.com/wp-includes/wlwmanifest.xml">
+    <meta name="generator" content="WordPress 4.4.11">
+    <link rel="canonical" href="http://dentall.stylemixthemes.com/">
+    <link rel="shortlink" href="http://dentall.stylemixthemes.com/">
+    <script type="text/javascript">
+        var ajaxurl = 'http://dentall.stylemixthemes.com/wp-admin/admin-ajax.php';
+    </script>
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://dentall.stylemixthemes.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://dentall.stylemixthemes.com/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]-->
+    <meta name="generator" content="Powered by Slider Revolution 5.0.8.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+    <link rel="icon" href="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/cropped-favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/cropped-favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/cropped-favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/cropped-favicon-270x270.png">
+    <link rel="stylesheet" href="D:\programming\webProgects\saveliev\template\css\dynamic-css.css" type="text/css" media="all">
+    <link rel="stylesheet" href="D:\programming\webProgects\saveliev\template\css\custom.css" type="text/css" media="all">
+    <noscript>&lt;style&gt; .wpb_animate_when_almost_visible { opacity: 1; }&lt;/style&gt;</noscript>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NSLZ8D5');</script>
+    <!-- End Google Tag Manager -->
+    <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/967109556/?random=1509439959461&amp;cv=8&amp;fst=1509439959461&amp;num=1&amp;guid=ON&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_his=1&amp;u_tz=180&amp;u_java=false&amp;u_nplug=4&amp;u_nmime=5&amp;gtm=Gap&amp;frm=2&amp;url=http%3A%2F%2Fdentall.stylemixthemes.com%2F&amp;tiba=Dent-All%20%E2%80%93%20Dental%20Practice%20WordPress%20Theme&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/12/intl/ru_ALL/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/12/intl/ru_ALL/map.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/12/intl/ru_ALL/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/12/intl/ru_ALL/marker.js"></script>
+    <style type="text/css">
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+
+            .gm-style img {
+                max-width: none;
+            }
+    </style>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/12/intl/ru_ALL/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/12/intl/ru_ALL/controls.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/12/intl/ru_ALL/stats.js"></script>
+
+
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
+<body class="home page page-id-2 page-template-default wpb-js-composer js-comp-ver-4.7.4 vc_responsive">
+    <div class="main">
+        <div class="main_wrapper">
+            <div class="wrapper">
+                <header id="header">
+                    <div class="top_bar">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                                    <div class="top_bar_left row">
+                                        <div class="col-12 col-md-5 col-lg-6">
+                                            <b>Хирург стоматолог в Беларуси</b>
+                                        </div>
+                                        <div class="col-12 col-md-7 col-lg-6">
+                                            <ul id="menu-top-bar-menu" class="top_bar_menu">
+                                                <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="mailto:info@stylemixthemes.com">Напишите нам</a></li>
+                                                <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+                                                    <a href="#">Как нас найти</a>
+                                                </li>
+                                                <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
+                                                    <a href="#">Оставьте свой отзыв</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                                    <div class="top_bar_right">
+                                        <form method="get" class="search-form" action="http://dentall.stylemixthemes.com/">
+                                            <input type="search" placeholder="Search" value="" name="s">
+                                            <button type="submit" class="button"><i class="stm-icon-search"></i></button>
+                                        </form>
+                                        <div class="top_bar_socials">
+                                            <ul>
+                                                <li>
+                                                    <a target="_blank" href="https://www.facebook.com/">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="https://www.twitter.com/">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="https://www.instagram.com/">
+                                                        <i class="fa fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="https://www.linkedin.com/">
+                                                        <i class="fa fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile_search">
+                        <form method="get" class="search-form" action="http://dentall.stylemixthemes.com/">
+                            <input type="search" placeholder="Search" value="" name="s">
+                            <button type="submit" class="button"><i class="stm-icon-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="top_nav affix">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                    <div class="logo">
+                                        <a href="/verstka.html"><img src="assets/images/logoSaveliev.png" alt="Doctor Saveliev"></a>
+                                        <div id="menu_toggle">
+                                            <button></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                    <ul id="menu-primary-menu" class="top_nav_menu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home">
+                                            <a href="http://dentall.stylemixthemes.com/">Главная страница</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                                            <a href="#">Обо мне</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                            <a href="#">Услуги</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/service">Сетка услуг</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                            <a href="#">Блог</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                    <a href="http://dentall.stylemixthemes.com/blog/">Содержание блога</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-902"><a href="#">Наши контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile_menu">
+                            <ul id="menu-primary-menu-1" class="top_mobile_menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home "><a href="">Главная страница</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                                    <a href="http://dentall.stylemixthemes.com/about-us/">Обо мне</a><span class="arrow"><i class="fa fa-chevron-down"></i></span>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="http://dentall.stylemixthemes.com/meet-the-teem/">Наша команда</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                    <a href="#">Услуги</a><span class="arrow"><i class="fa fa-chevron-down"></i></span>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="/service">Сетка услуг</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                    <a href="#">Блог</a><span class="arrow"><i class="fa fa-chevron-down"></i></span>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                            <a href="http://dentall.stylemixthemes.com/blog/">Содержание</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-902"><a href="http://dentall.stylemixthemes.com/contact-us/">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="top_info_boxes">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="top_info_box">
+                                        <div class="icon">
+                                            <i class="stm-icon-roundels"></i>
+                                        </div>
+                                        <div class="text">
+                                            <strong>Позвоните сейчас +375 29 2222222</strong>
+                                            <span>Республика Беларусь, Минск, ул. Рафиева 85</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="top_info_box">
+                                        <div class="icon">
+                                            <i class="stm-icon-clock"></i>
+                                        </div>
+                                        <div class="text">
+                                            <strong>Часы работы</strong>
+                                            <span>Пн - Вс: 8 am - 5 pm</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-right">
+                                    <div class="top_info_box linked">
+                                        <div class="icon">
+                                            <i class="stm-icon-calculator"></i>
+                                        </div>
+                                        <div class="text">
+                                            <strong>Записаться на прием</strong>
+                                            <span>Это просто</span>
+                                        </div>
+                                        <a href="#" class="link"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </header>
+                <section id="content">
+                    @RenderBody()
+                    <div class="container-fluid">
+                        <div class="row sv-carowsel">
+                            <div class="carousel-wrapper col-12">
+                                <div class="mainCarowsel owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img alt="first-slide" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/1.jpg" />
+                                        <span class="mainCarowsel_itemHeader">Услуги стоматолога</span>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="first-slide" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/09/2.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row sv-aboutUs">
+                                <div class="col-10">
+                                    <div class="sv-aboutAs__description row">
+                                        <div class="col-12">
+                                            <h2 style="" class="">Обо мне</h2>
+                                            <div style="" class="sv-aboutAs__description-name">Встречайте доктор С. Савельев</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="media">
+                                                <figure class="mr-3">
+                                                    <img class="full_width_mobile wp-image-158 size-medium" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/Fotolia_63054040_Subscription_Monthly_XL-300x200.jpg" alt="Доктор Савельев с пациентом" srcset="http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/Fotolia_63054040_Subscription_Monthly_XL-300x200.jpg 300w, http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/Fotolia_63054040_Subscription_Monthly_XL.jpg 500w" sizes="(max-width: 300px) 100vw, 300px" height="200" width="300">
+                                                    <figcaption class="sv-aboutAs__description-figureCaption">Доктор Савельев<br> с пациентом</figcaption>
+                                                </figure>
+                                                <div class="media-body">
+                                                    <p>Our&nbsp;Dental Clinic&nbsp;is dedicated to providing the most up to date general, orthodontic and family dentistry.</p>
+                                                    <p>Our Clinic&nbsp;has grown to provide a world class facility for the treatment of tooth loss, dental cosmetics and advanced restorative dentistry.</p>
+                                                    <p>We are among the most qualified implant providers in the USA&nbsp;with over 35 years of quality training and experience.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 sv-aboutAs-sertificatesCarowsel">
+                                    <h4>Сертификаты</h4>
+                                    <ul>
+                                        <li><img class="" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/image002a-130x100.jpg" alt="image002a" title="image002a" height="100" width="130"></li>
+                                        <li><img class="" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/image002a-130x100.jpg" alt="image002a" title="image002a" height="100" width="130"></li>
+                                        <li><img class="" src="http://dentall.stylemixthemes.com/wp-content/uploads/2015/08/image002a-130x100.jpg" alt="image002a" title="image002a" height="100" width="130"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row sv-ourAdvantages justify-content-center">
+                            <div class="col-10 sv-ourAdvantages__header"><h2>Наши приемущества</h2></div>
+                            <div class="col-10 sv-ourAdvantages__header">
+                                <ul class="list-unstyled d-flex sv-ourAdvantages__list">
+                                    <li class="px-1">
+
+
+                                        <div class="icon" style="height: 90px;">
+                                            <i class="stm-icon-computer"></i>
+                                        </div>
+
+                                        <div class="text">
+                                            <h4>
+                                                Accepting Insurance<br>
+                                                Cards
+                                            </h4>
+                                            <p class="p1">
+                                                <span style="">Our clinic can easily accept the customers with insurance cards and create the history of cases for each.</span>
+                                            </p>
+                                        </div>
+
+
+                                    </li>
+                                    <li class="px-1">
+
+                                        <div class="icon" style="height: 90px;">
+                                            <i class="stm-icon-tooth-4"></i>
+                                        </div>
+
+                                        <div class="text">
+                                            <h4>
+                                                Using Innovative<br>
+                                                Technology
+                                            </h4>
+                                            <p class="p1">
+                                                <span>All our surgeries are furnished with state of the art equipment and maintained at the highest standards.</span>
+                                            </p>
+                                        </div>
+
+                                    </li>
+                                    <li class="px-1">
+
+                                        <div class="icon" style="height: 90px;">
+                                            <i class="stm-icon-tooth-5"></i>
+                                        </div>
+
+                                        <div class="text">
+                                            <h4>
+                                                Guarantee Success<br>
+                                                of Treatments
+                                            </h4>
+                                            <p class="p1">
+                                                <span>Most of our treatments are covered by a long term guarantee which will be discussed with you before beginning treatment.</span>
+                                            </p>
+                                        </div>
+
+                                    </li>
+                                    <li class="px-1">
+
+                                        <div class="icon" style="height: 90px;">
+                                            <i class="stm-icon-sertificate"></i>
+                                        </div>
+
+                                        <div class="text">
+                                            <h4>
+                                                Certified Dentist<br>
+                                                Doctors
+                                            </h4>
+                                            <p class="p1">
+                                                <span>With over 30 years of dental experience and experience with implants, we are experts in all facets of dentistry.</span>
+                                            </p>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="row sv-ourHappyClients justify-content-center my-5">
+                            <div class="col-10"><h2 class="mb-4">Наши счастливые клиенты</h2></div>
+                            <div class="col-10">
+                                <div class="happyClients__carowsel owl-carousel">
+                                    <div class="item">
+                                        <div class="testimonial">
+                                            <div class="testimonial_text additional_font">
+                                                <p>The doctors and nurses and aides were excellent. The food was excellent. I am feeling fine, back to my old self again and it feels great. Thank God for clinics such as yours.</p>
+                                            </div>
+                                            <div class="testimonial_author">Maria Jackson</div>
+                                            <div class="testimonial_position">Teacher</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial">
+                                            <div class="testimonial_text additional_font">
+                                                <p>The doctors and nurses and aides were excellent. The food was excellent. I am feeling fine, back to my old self again and it feels great. Thank God for clinics such as yours.</p>
+                                            </div>
+                                            <div class="testimonial_author">Maria Jackson</div>
+                                            <div class="testimonial_position">Teacher</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial">
+                                            <div class="testimonial_text additional_font">
+                                                <p>The doctors and nurses and aides were excellent. The food was excellent. I am feeling fine, back to my old self again and it feels great. Thank God for clinics such as yours.</p>
+                                            </div>
+                                            <div class="testimonial_author">Maria Jackson</div>
+                                            <div class="testimonial_position">Teacher</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="testimonial">
+                                            <div class="testimonial_text additional_font">
+                                                <p>The doctors and nurses and aides were excellent. The food was excellent. I am feeling fine, back to my old self again and it feels great. Thank God for clinics such as yours.</p>
+                                            </div>
+                                            <div class="testimonial_author">Maria Jackson</div>
+                                            <div class="testimonial_position">Teacher</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row sv-onlineAppointment justify-content-center">
+                            <div class="col-10"><h2 class="mb-4">Записаться на прием</h2></div>
+                            <div class="col-10">
+                                <form>
+                                    <div class="form-group row">
+                                        <span class="col-1 input-addon formInputLabel justify-content-end d-flex">
+                                            <i class="stm-icon-man"></i>
+                                        </span>
+                                        <div class="col-11">
+                                            <input type="text" class="form-control" id="inputName" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <span class="col-1 input-addon formInputLabel justify-content-end d-flex">
+                                            <i class="stm-icon-roundels"></i>
+                                        </span>
+                                        <div class="col-5">
+                                            <input type="tel" class="form-control" id="inputPhone" placeholder="Телефон">
+                                        </div>
+
+                                        <span class="col-1 input-addon formInputLabel justify-content-end d-flex">
+                                            <i class="fa fa-envelope-o"></i>
+                                        </span>
+                                        <div class="col-5">
+                                            <input type="email" class="form-control" id="inputEmail" placeholder="Почта">
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <span class="col-1 input-addon formInputLabel justify-content-end d-flex">
+                                            <i class="stm-icon-calculator"></i>
+                                        </span>
+                                        <div class="col-5">
+                                            <input type="date" class="form-control" id="inputDate" placeholder="Дата">
+                                        </div>
+
+                                        <span class="col-1 input-addon formInputLabel justify-content-end d-flex">
+                                            <i class="stm-icon-clock"></i>
+                                        </span>
+                                        <div class="col-5">
+                                            <input type="time" class="form-control" id="inputTime" placeholder="Время">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <input type="file" class="form-control" id="inputName" placeholder="Приложите снимки">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <textarea cols="40" rows="5" class="form-control" id="inputName" placeholder="Ваше сообщение"></textarea>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row sv-priceList"></div>
+                        <div class="row sv-howToFindUs"></div>
+
+
+                    </div><!--.container-->
+                </section> <!--#content-->
+                <footer id="footer">
+                    <div class="footer_widgets">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <aside id="text-2" class="widget widget_text footer_widget">
+                                        <div class="widget_title"><h5>About Us</h5></div>			<div class="textwidget">
+                                            <p>We are a highly motivated team, all with very individual qualities and experience, and a high standard of patient care.</p>
+                                            <p>We have advanced high levels of training and decades of experience and we constantly strive to provide the best treatment available using the most up to date tried and tested technology.  </p>
+                                        </div>
+                                    </aside>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <aside id="nav_menu-2" class="widget widget_nav_menu footer_widget">
+                                        <div class="widget_title"><h5>Quick Links</h5></div><div class="menu-footer-menu-container">
+                                            <ul id="menu-footer-menu" class="menu">
+                                                <li id="menu-item-926" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-926"><a href="http://dentall.stylemixthemes.com/">Home</a></li>
+                                                <li id="menu-item-929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-929"><a href="http://dentall.stylemixthemes.com/about-us/">About Us</a></li>
+                                                <li id="menu-item-928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928"><a href="http://dentall.stylemixthemes.com/blog/">Blog</a></li>
+                                                <li id="menu-item-925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-925"><a href="http://dentall.stylemixthemes.com/faq/">FAQ</a></li>
+                                                <li id="menu-item-927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-927"><a href="http://dentall.stylemixthemes.com/contact-us/">Contact Us</a></li>
+                                                <li id="menu-item-930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-930"><a href="http://dentall.stylemixthemes.com/photo-gallery/">Photo Gallery</a></li>
+                                                <li id="menu-item-931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-931"><a href="http://dentall.stylemixthemes.com/vacancies/">Vacancies</a></li>
+                                                <li id="menu-item-932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-932"><a href="http://dentall.stylemixthemes.com/testimonials/">Testimonials</a></li>
+                                            </ul>
+                                        </div>
+                                    </aside>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <aside id="recent-posts-3" class="widget widget_recent_entries footer_widget">
+                                        <div class="widget_title"><h5>Latest News</h5></div>		<ul>
+                                            <li>
+                                                <a href="http://dentall.stylemixthemes.com/we-are-amongst-the-most-qualified-dental-implant-providers/">We are amongst the most qualified dental implant providers</a>
+                                                <span class="post-date">September 26, 2015</span>
+                                            </li>
+                                            <li>
+                                                <a href="http://dentall.stylemixthemes.com/to-find-out-if-your-child-is-eligible-call-the-department-of-human-services/">To find out if your child is eligible call The Department of Human Services</a>
+                                                <span class="post-date">September 26, 2015</span>
+                                            </li>
+                                            <li>
+                                                <a href="http://dentall.stylemixthemes.com/if-you-need-a-crown-or-an-implant-you-will-pay-a-gap/">If you need a crown or an implant you will pay a gap</a>
+                                                <span class="post-date">September 26, 2015</span>
+                                            </li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <aside id="stm_socials-6" class="widget widget_stm_socials footer_widget"><div class="widget_title"><h5>Our Social Pages</h5></div><ul><li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li><li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li><li><a href="http://instagram.com"><i class="fa fa-instagram"></i></a></li><li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li></ul></aside><aside id="stm_schedule-2" class="widget widget_stm_schedule footer_widget"><div class="widget_title"><h5>Opening Hours</h5></div><ul class="stm_schedule_list"><li class="schedule-list_item"><span class="schedule_day">Monday - Friday</span><span class="schedule_time">9:00 am - 6:00 pm</span></li><li class="schedule-list_item"><span class="schedule_day">Saturday</span><span class="schedule_time">9:00 am - 4:00 pm</span></li><li class="schedule-list_item"><span class="schedule_day">Sunday</span><span class="schedule_time">9:00 am - 2:00 pm</span></li><li class="schedule-list_item"><span class="schedule_day"></span><span class="schedule_time"></span></li></ul></aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <div class="container">
+                            Copyright © 2017
+                        </div>
+                    </div>
+                </footer>
+            </div> <!--.wrapper-->
+        </div> <!--.main_wrapper-->
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <!--.main-->
+    <link rel="stylesheet" id="vc_google_fonts_abril_fatfaceregular-css" href="//fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.4.11" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" id="stm_slick.css-css" href="http://dentall.stylemixthemes.com/wp-content/themes/dent-all/assets/css/slick.css?ver=1.2" type="text/css" media="all">
+    <!-- Мои скрипты -->
+    <script type="text/javascript" src="js/owlCarousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/sv.js"></script>
+    <script type="text/javascript">
+        (function () {
+            console.log("ready for start");
+            sv.init();
+        }());
+    </script>
+    <!-- END Мои скрипты -->
+    <!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+    Served from: dentall.stylemixthemes.com  2017-10-31 13:52:37 by W3 Total Cache -->
+    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
