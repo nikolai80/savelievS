@@ -133,6 +133,9 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\libs\hamburgers\hamburgers.css" />
+    <Content Include="Content\images\icon-mobile-phone.jpg" />
+    <Content Include="Content\images\vrach1.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -160,6 +163,10 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Content\sass\_libs.scss" />
+    <Content Include="Content\sass\main.scss" />
+    <Content Include="Content\sass\_fonts.scss" />
+    <Content Include="Content\sass\_variables.scss" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -207,8 +214,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\css\" />
-    <Folder Include="Content\sass\" />
+    <Folder Include="Content\fonts\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\modules\" />
   </ItemGroup>
